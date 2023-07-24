@@ -848,29 +848,47 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
-.check-text span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.check-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: inline-flex; /* Додаємо inline-flex для позиціонування */
+  align-items: center; /* Вирівнювання по вертикалі */
+}
+
+.custom-checkbox {
+  position: relative; /* Позиціонування відносно батьківського елементу */
+  padding-left: 30px; /* Відступ для розміщення кастомного чекбоксу */
+}
+
+.check-text {
   width: 16px;
   height: 16px;
-  border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  margin-right: 8px;
+  border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: transparent;
+  position: absolute; /* Позиціонування відносно батьківського елементу */
+  left: 0; /* Розміщення зліва від батьківського елементу */
 }
 
-.modal-check:checked + .check-text span {
+.check-icon {
+  fill: #fff;
+}
+
+/* Оформлення при вибраному чекбоксі */
+#user-privacy:checked + .check-label .check-text {
   background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
 }
 
 .modal-check:focus + .check-text span {
