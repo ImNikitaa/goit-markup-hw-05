@@ -844,7 +844,7 @@ body {
 }
 
 .check-text {
-  display: inline-flex;
+  display: block;
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
@@ -854,6 +854,7 @@ body {
 }
 
 .check-text span {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
