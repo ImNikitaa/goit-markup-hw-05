@@ -433,11 +433,9 @@
           </ul>
         </div>
         <div class="footer-box3">
-          <form action="footer-form">
-            <label for="footer-email" class="footer-text-label"
-              >Subscribe</label
-            >
-            <div class="footer-input-wrap">
+          <p class="footer-text-media">Subscribe</p>
+          <form action="footer-form" class="portfolio-form">
+            <label aria-label="footer-email">
               <input
                 type="email"
                 name="footer-email"
@@ -445,14 +443,13 @@
                 class="footer-input"
                 placeholder="E-mail"
               />
-
-              <button type="submit" class="footer-form-btn">
-                Subscribe
-                <svg class="footer-icon-btn" width="24" height="24">
-                  <use href="./images/icons.svg#icon-airplane"></use>
-                </svg>
-              </button>
-            </div>
+            </label>
+            <button type="submit" class="footer-form-btn">
+              Subscribe
+              <svg class="footer-icon-btn" width="24" height="24">
+                <use href="./images/icons.svg#icon-airplane"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -511,24 +508,24 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label for="user-text" class="input-label">Comment</label>
+          <div class="modal-field filed-comment">
+            <label for="user-comment" class="input-label">Comment</label>
             <textarea
-              name="user-text"
-              id="user-text"
+              name="user-comment"
+              id="user-comment"
               class="modal-textarea"
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-field">
+          <div class="modal-field field-checkbox">
             <input
               type="checkbox"
-              name="user-terms"
-              id="user-terms"
+              name="user-privacy"
+              id="user-privacy"
               class="modal-check visually-hidden"
             />
-            <label for="user-terms" class="check-text"
-              ><span>
+            <label for="user-privacy" class="check-text"
+              ><span class="check-text">
                 <svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
